@@ -1,0 +1,21 @@
+[package]
+name = "serde-construct-classic"
+version = "0.1.0"
+edition = "2021"
+authors = ["taffyko"]
+
+[lib]
+
+[[bin]]
+name = "cstc_json"
+path = "src/cli.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.4.2", features = ["derive"] }
+encoding_rs = "0.8.33"
+serde = "1.0.196"
+serde-transcode = "1.1.1"
+serde_derive = "1.0.196"
+serde_json = "1.0.113"
